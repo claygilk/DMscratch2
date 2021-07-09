@@ -1,0 +1,40 @@
+body {
+    background-color: #f9f9f9;
+    color:#242527;
+    font-family: Roboto, Helvetica, sans-serif;
+    background-image: url(./background_texture.png);
+}
+
+label {
+    margin-right: .6em;
+}
+
+output {
+    margin-right: .6em;
+}
+
+header{
+    color: #bc0f0f;
+    background-color: #242527;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+}
+
+#DMscreen {
+    margin-top: 75px;
+    font-size: 1.4em;
+}
+
+button {
+    font-size: 1em;
+}
+
+input {
+    font-size: 1em;
+}
