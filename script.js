@@ -28,11 +28,13 @@ function addMonster(){
     let form = document.createElement("form");
 
     let HpLabel = document.createElement("label");
+    HpLabel.setAttribute("style", "display: inline-flex; width: 100px; align-items: flex-end;");
     HpLabel.appendChild(document.createTextNode(idCounter + ". HP: "));
     
     let HpBar = document.createElement("label");
     HpBar.innerHTML = 0;
     HpBar.setAttribute("id", "HpBar_" + idCounter);
+    HpBar.setAttribute("style", "display: inline-block; width: 35px;");
     
     let healInput = document.createElement("input");
     healInput.setAttribute("type", "number");
