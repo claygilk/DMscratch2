@@ -44,6 +44,7 @@ function addMonster(){
     let healButton = document.createElement("button");
     healButton.innerHTML = "Heal";
     healButton.setAttribute("id", "HealButton_" + idCounter);
+    healButton.setAttribute("class", "btn btn-success");
     
     healButton.setAttribute("onclick", "applyHeal(" + idCounter + "); return false");
     
@@ -58,6 +59,7 @@ function addMonster(){
     damageButton.innerHTML = "Damage";
     damageButton.setAttribute("onclick", "applyDamage(" + idCounter + "); return false");
     damageButton.setAttribute("id", "DamageButton_" + idCounter)
+    damageButton.setAttribute("class", "btn btn-danger");
     
     form.appendChild(HpLabel);
     form.appendChild(HpBar);

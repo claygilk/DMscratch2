@@ -3,6 +3,13 @@ body {
     color:#242527;
     font-family: Roboto, Helvetica, sans-serif;
     background-image: url(./background_texture.png);
+    display: grid;
+    justify-items: start;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    "header header"
+    "sidebar screen";
+    grid-template-rows: 50px 1fr;
 }
 
 label {
@@ -24,11 +31,31 @@ header{
     font-size: 1.8em;
     display: flex;
     align-items: center;
+    grid-area: header;
 }
 
-#DMscreen {
-    margin-top: 75px;
+div#DMscreen {
     font-size: 1.4em;
+    grid-area: screen;
+    align-self: start;
+    display: flex;
+    flex-flow: column wrap;
+    justify-self: stretch;
+    padding: 3px;
+    border-top: 3px solid #242527;
+    
+  }
+
+#DMscreen > button {
+    align-self: flex-start
+  }
+
+body > nav.sidebar {
+    grid-area: sidebar;
+    border: 3px solid #242527;
+    align-self: stretch;
+    justify-self: stretch;
+    padding: 3px
 }
 
 button {
@@ -37,4 +64,22 @@ button {
 
 input {
     font-size: 1em;
+}
+
+.sidebar > ul > li {
+    font-size: 1.1em;
+    text-align: right;
+}
+
+li > input {
+    font-size: .8em;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
 }
